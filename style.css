@@ -1,0 +1,20 @@
+.div{
+    height:100vh;
+    width:50vw;
+}
+.hexNum{
+    size:20px;
+    color:white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+#parent{
+    display:flex;
+    justify-content: space-around;
+}
+#clock{
+    background-color: #0000FF
+}
+#counter{
+    background-color: #FFFF00
+}
