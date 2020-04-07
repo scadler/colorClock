@@ -3,13 +3,9 @@ function changeColors(){
     hours = (date.getHours() < 10) ? "0"+date.getHours() : date.getHours()
     minutes = (date.getMinutes() < 10) ? "0"+date.getMinutes() : date.getMinutes()
     seconds = (date.getSeconds() < 10) ? "0"+date.getSeconds() : date.getSeconds()
-    // milliseconds = date.getMilliseconds()
-    // secondsSinceMidnight = hours*3600 + minutes*60 + seconds
-    // secondsInADay = 86400
     hexHours = (Math.floor(255 * hours/24).toString(16).length > 1) ?  Math.floor(255 * hours/24).toString(16) : "0" + Math.floor(255 * hours/24).toString(16)
     hexMinutes = (Math.floor(255 * minutes/60).toString(16).length > 1) ? Math.floor(255 * minutes/60).toString(16): "0" + Math.floor(255 * minutes/60).toString(16)
     hexSeconds = (Math.floor(255 * seconds/60).toString(16).length > 1) ? Math.floor(255 * seconds/60).toString(16): "0" + Math.floor(255 * seconds/60).toString(16) 
-    // console.log(secondsSinceMidnight +"   "+ secondsSinceMidnight%60)
     $("#time").text(hours + ":" + minutes + ":" + seconds)
     $("html").css("background-color","#"+`${hexHours}`+`${hexMinutes}`+`${hexSeconds}`)
     $("#timeHex").text("#"+`${hexHours}`+`${hexMinutes}`+`${hexSeconds}`)

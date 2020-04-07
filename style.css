@@ -19,15 +19,15 @@ html{
     color:white;
     font-family: 'Roboto Mono', monospace;
 }
-#parentTop{
+.divTop{
     display:flex;
     justify-content: center;
+}
+#parentTop{
     height:10vh;
     width:100vw;
 }
 #parentMiddle{
-    display:flex;
-    justify-content: center;
     height:40vh;
     width:100vw;
 }
